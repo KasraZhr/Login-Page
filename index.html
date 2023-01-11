@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Cascading stylesheet  -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>log-in page</title>
-</head>
-<body>
+    <!-- Cascading stylesheet Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <div class="login-card">
-        <h2>login</h2>
-        <h3>enter your credentials</h3>
-        <form class="login-form">
-            <input type="text" placeholder="username" >
-            <input type="password" placeholder="password">
-            <a href="#">
-                <p>forget your password?</p>
-            </a>
-            <button>Log In</button>
-        </form>
-
+      <h2 class="title py-2">login</h2>
+      <h3 class="py-4 text-muted">Enter your information</h3>
+      <form class="login-form">
+        <input type="text" placeholder="username" class="w-100" />
+        <input type="password" placeholder="password" class="my-3 w-100" />
+        <a href="#" id="reset-a-tag">
+          <p class="lead text-primary" id="reset">forget your password?</p>
+        </a>
+        <button class="btn btn-primary text-white fw-bold w-100" id="btn">Log In</button>
+      </form>
     </div>
-</body>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
