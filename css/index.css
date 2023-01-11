@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+}
+a , button{
+    cursor: pointer;
+}
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url(/img/low-poly-grid-haikei\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: move 6s infinite alternate-reverse linear;
+}
+.login-card{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 70px 30px 44px;
+}
+@media (width >=500px){
+    .login-card{
+        width: 400px;
+    }
+}
+@keyframes move {
+    100%{
+        background-position: 15% 50%;
+    }
+}
